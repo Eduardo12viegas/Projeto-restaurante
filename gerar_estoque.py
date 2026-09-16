@@ -2,8 +2,6 @@ from faker import Faker
 import random
 import pickle
 
-faker = Faker("pt_BR")
-
 produtos_nomes = [
     "Pizza", "Hambúrquer", "Salada", "Café", "Suco de laranja", 
     "Suco de uva", "Sopa", "Porção de frango", "Porção de batata"
@@ -13,8 +11,8 @@ produtos_nomes = [
 
 produtos = []
 for nome in produtos_nomes:
-    preco = round(random.uniform(10, 80), 2)
-    estoque = random.randint(5, 30)
+    preco = round(random.uniform(10, 80), 2) 
+    estoque = random.randint(5, 30) 
     produtos.append((nome, preco, estoque))
 
 #teste: mostrar produtos
